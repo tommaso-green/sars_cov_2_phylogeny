@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Covid19GenomeSequencing.iml" filepath="$PROJECT_DIR$/.idea/Covid19GenomeSequencing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SARS-CoV-2 Phylogeny by Pairwise Alignments.iml" filepath="$PROJECT_DIR$/.idea/SARS-CoV-2 Phylogeny by Pairwise Alignments.iml" />
     </modules>
   </component>
 </project>
