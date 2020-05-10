@@ -2,6 +2,6 @@
 /test_sequences/matrices/
 /test_sequences/out/
 /io_test.py
-/mixed.fasta
-/united_states.fasta
+/fastas/mixed.fasta
+/fastas/united_states.fasta
 /test_sequences/
