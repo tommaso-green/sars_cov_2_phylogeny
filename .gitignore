@@ -1,7 +1,4 @@
-/data/input_sequences/
-/data/matrices/
-/data/out/
 /io_test.py
 /fasta_files/mixed.fasta
 /fasta_files/united_states.fasta
-/data/
+/needle_align.py

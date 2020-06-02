@@ -1,0 +1,55 @@
+
+Neighbor-Joining/UPGMA method version 3.69.650
+
+
+  10 Populations
+
+ Neighbor-joining method
+
+ Negative branch lengths allowed
+
+
+      +ISL_404895
+    +-1 
+  +-2 +ISL_408666
+  ! ! 
+  ! +ISL_407071
+  ! 
+  ! +ISL_402125
+  3-4 
+  ! ! +ISL_410044
+  ! +-5 
+  !   ! +ISL_402127
+  !   +-6 
+  !     ! +ISL_402128
+  !     +-7 
+  !       ! +ISL_406596
+  !       +-8 
+  !         +ISL_406862
+  ! 
+  +ISL_402124
+
+
+remember: this is an unrooted tree!
+
+Between        And            Length
+-------        ---            ------
+   3             2            0.00007
+   2             1            0.00000
+   1          ISL_404895      0.00003
+   1          ISL_408666      0.00007
+   2          ISL_407071      0.00007
+   3             4            0.00000
+   4          ISL_402125     -0.00000
+   4             5            0.00000
+   5          ISL_410044     -0.00000
+   5             6            0.00000
+   6          ISL_402127      0.00007
+   6             7            0.00000
+   7          ISL_402128      0.00007
+   7             8            0.00000
+   8          ISL_406596      0.00007
+   8          ISL_406862      0.00010
+   3          ISL_402124     -0.00000
+
+
