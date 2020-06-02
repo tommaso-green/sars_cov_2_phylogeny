@@ -5,7 +5,7 @@ from Bio.Emboss.Applications import FDNADistCommandline
 
 
 def compute_pairwise_matrices():
-    alignments = os.listdir("test_sequences/out")  # get list of all pairwise alignments previously completed
+    alignments = os.listdir("data/alignments")  # get list of all pairwise alignments previously completed
     fline = FDNADistCommandline()  # create FDNADist object
     fline.method = "f"
     fline.stdout = True
@@ -13,10 +13,10 @@ def compute_pairwise_matrices():
     matrix_id = 1
     end_filename = 24  # filename end before ".phy", see below
     for alignment in alignments:
-        fline.sequence = "test_sequences/out/" + alignment  # set sequence parameter
+        fline.sequence = "data/alignments/" + alignment  # set sequence parameter
         fline.outfile = alignment[:end_filename] + "_matrix"  # to get string ISL_XXXXXX_vs_ISL_YYYYYY_matrix
         print(str(fline))
-        p = subprocess.Popen(str(fline) + " -odirectory2 test_sequences/matrices ",
+        p = subprocess.Popen(str(fline) + " -odirectory2 data/matrices ",
                              shell=True)  # launching subprocess
         processes.append((matrix_id, p))  # appending to process list
         matrix_id += 1
@@ -29,12 +29,11 @@ def compute_pairwise_matrices():
 
 
 def get_distances():
-    os.chdir("test_sequences/matrices")
-    matrix_files = os.listdir()  # get list of all matrix files
+    matrix_files = os.listdir("data/matrices")  # get list of all matrix files
     distance_dict = {}  # data structure to save all pairwise distances
     end_filename = 24  # filename end before ".phy"
     for filename in matrix_files:
-        f = open(filename, "r+")  # open matrix file
+        f = open("data/matrices/" + filename, "r+")  # open matrix file
         line = f.readlines()[2]  # get third line
         distance_dict[filename[:end_filename]] = line.split(" ")[1]  # get element in position (1,1)
         f.close()
@@ -55,12 +54,11 @@ def get_distances_by_name(name, distances):
 
 
 def create_final_matrix(num_sequences):
+    compute_pairwise_matrices()
     distances = get_distances()  # get dictionary of all pairwise distances
-    os.chdir("..")  # return to main folder test_sequences
     sequences = [sequence_filename.split(".")[0] for sequence_filename in
-                 os.listdir("input_sequences")[:num_sequences]]  # get list of all sequences (up to num_sequences)
-    combos = list(combinations(sequences, 2))
-    out_file = open("final_matrix.phy", "w+")  # open file which will contain final matrix in low triangular form
+                 os.listdir("data/input_sequences")[:num_sequences]]  # get list of all sequences (up to num_sequences)
+    out_file = open("data/final_matrix.phy", "w+")  # open file which will contain final matrix in low triangular form
     lines = []
     i = 1
     for sequence in reversed(sequences):  # last sequence will be the last line of matrix made of n - 1 entries

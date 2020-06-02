@@ -1,7 +1,7 @@
-/test_sequences/input_sequences/
-/test_sequences/matrices/
-/test_sequences/out/
+/data/input_sequences/
+/data/matrices/
+/data/out/
 /io_test.py
-/fastas/mixed.fasta
-/fastas/united_states.fasta
-/test_sequences/
+/fasta_files/mixed.fasta
+/fasta_files/united_states.fasta
+/data/
