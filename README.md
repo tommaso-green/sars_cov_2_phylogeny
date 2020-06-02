@@ -1,9 +1,9 @@
 # Phylogenetic trees by Multiple Pairwise Alignments
 
 This is a repo containing code for creating neighbor-joining
-phylogenetic trees. It is mainly based on [Biopython] (https://biopython.org) and on
-[EMBOSS] (http://emboss.sourceforge.net/index.html) and the usage of phylip software through the use of
-the EMBASSY package [PHYLIPNEW] (http://emboss.sourceforge.net/apps/release/6.6/embassy/phylipnew/) 
+phylogenetic trees. It is mainly based on [Biopython](https://biopython.org) and on
+[EMBOSS](http://emboss.sourceforge.net/index.html) and the usage of phylip software through the use of
+the EMBASSY package [PHYLIPNEW](http://emboss.sourceforge.net/apps/release/6.6/embassy/phylipnew/) 
 The execution of this software is recommended on Ubuntu due to the great ease of
 installation of the dependecies.
 
@@ -25,8 +25,8 @@ sudo apt install embassy-phylip
 ```
 
 If you wish to run this software on other Linux Distros:
-* [EMBOSS Download and Instructions] (http://emboss.sourceforge.net/download/)
-* [EMBASSY PHYLIPNEW] (ftp://emboss.open-bio.org/pub/EMBOSS/) can be downloaded as a tarball here,
+* [EMBOSS Download and Instructions](http://emboss.sourceforge.net/download/)
+* [EMBASSY PHYLIPNEW](ftp://emboss.open-bio.org/pub/EMBOSS/) can be downloaded as a tarball here,
   (instructions inside.)
 
 ## Usage
