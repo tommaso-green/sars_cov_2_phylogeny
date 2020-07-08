@@ -1,7 +1,7 @@
 # Phylogenetic trees by Multiple Pairwise Alignments
-
-This is a repo containing code for creating neighbor-joining
-phylogenetic trees. It is mainly based on [Biopython](https://biopython.org) and on
+This code was developed for a project for the Bioinformatics course of the University of Padua. 
+This repo contains code for creating neighbor-joining
+phylogenetic trees using as input all possible pairwise alignments of SARS-CoV-2 input sequences. It is mainly based on [Biopython](https://biopython.org) and on
 [EMBOSS](http://emboss.sourceforge.net/index.html) and the usage of phylip software through the use of
 the EMBASSY package [PHYLIPNEW](http://emboss.sourceforge.net/apps/release/6.6/embassy/phylipnew/) which is basically
 a collection of [PHYLIP](http://evolution.genetics.washington.edu/phylip.html) applets in an EMBOSS-like environment
