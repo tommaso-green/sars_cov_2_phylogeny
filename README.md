@@ -60,4 +60,6 @@ python3 phylogeny_pipeline.py -n no_of_sequences
 ```
 
 where no_of_sequences is a proper integer. 
-Please set no_of_sequences = all if you want to consider all the sequences. 
+Please set no_of_sequences = all if you want to consider all the sequences.
+In the data folder you can find the results (splitting, alignments, matrices and tree)
+of the execution with no_of_sequences = 15. 
